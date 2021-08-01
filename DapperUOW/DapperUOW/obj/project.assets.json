@@ -6600,11 +6600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aalbzour\\source\\repos\\DapperUOW\\DapperUOW\\DapperUOW.csproj",
+      "projectUniqueName": "C:\\Users\\aalbzour\\source\\repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj",
       "projectName": "DapperUOW",
-      "projectPath": "C:\\Users\\aalbzour\\source\\repos\\DapperUOW\\DapperUOW\\DapperUOW.csproj",
+      "projectPath": "C:\\Users\\aalbzour\\source\\repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj",
       "packagesPath": "C:\\Users\\aalbzour\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aalbzour\\source\\repos\\DapperUOW\\DapperUOW\\obj\\",
+      "outputPath": "C:\\Users\\aalbzour\\source\\repos\\analahali\\codes\\DapperUOW\\DapperUOW\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aalbzour\\AppData\\Roaming\\NuGet\\NuGet.Config",
