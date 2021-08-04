@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aalbzour\\source\\repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj": {}
+    "C:\\Users\\ali\\Source\\Repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aalbzour\\source\\repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj": {
+    "C:\\Users\\ali\\Source\\Repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aalbzour\\source\\repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj",
+        "projectUniqueName": "C:\\Users\\ali\\Source\\Repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj",
         "projectName": "DapperUOW",
-        "projectPath": "C:\\Users\\aalbzour\\source\\repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj",
-        "packagesPath": "C:\\Users\\aalbzour\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aalbzour\\source\\repos\\analahali\\codes\\DapperUOW\\DapperUOW\\obj\\",
+        "projectPath": "C:\\Users\\ali\\Source\\Repos\\analahali\\codes\\DapperUOW\\DapperUOW\\DapperUOW.csproj",
+        "packagesPath": "C:\\Users\\ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ali\\Source\\Repos\\analahali\\codes\\DapperUOW\\DapperUOW\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\aalbzour\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -87,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }

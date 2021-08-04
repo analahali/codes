@@ -1,0 +1,47 @@
+<#@ template hostspecific="true" language="C#" #>
+ <#@ assembly name="System.Core" #>
+ <#@ assembly name="EnvDTE" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System" #>
+<#@ assembly name="EnvDTE" #>
+<#@ import namespace="EnvDTE" #>
+ <#@ import namespace="System.Collections.Generic" #>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Test
+    {
+        public Test()
+        {
+           
+        }
+    }
+}
+<#
+
+  //SaveOutput("Content" + i.ToString() + ".txt");
+  //Uncomment following to write to separate folder 1,2,3
+  SaveOutputToSubFolder("Content","Test" + ".cs");
+
+#>
+<#+
+ 
+private void SaveOutputToSubFolder(string folderName, string outputFileName) {
+  string templateDirectory = Path.GetDirectoryName("../../Content");
+  string newDirectoryName = Path.Combine(templateDirectory,folderName);
+  if(!Directory.Exists(newDirectoryName))
+    Directory.CreateDirectory(newDirectoryName);
+  string outputFilePath = Path.Combine(newDirectoryName, outputFileName);
+  File.WriteAllText(outputFilePath, this.GenerationEnvironment.ToString()); 
+  this.GenerationEnvironment.Clear();
+}
+#>
+

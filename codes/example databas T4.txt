@@ -1,0 +1,40 @@
+<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".generated.cs" #>
+<#@ assembly name="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#
+var connectionString = "Data Source=ali\\SQLEXPRESS; Initial Catalog=InformationCardDB;"
+   + "Integrated Security=true;";
+var sqlString = "SELECT distinct Doc_Code FROM Documents";
+#>
+// This code is generated. Please do not edit it directly
+// If you need to make changes please edit ContactType.tt instead
+namespace AdventureWorks {
+  public enum ContactType {
+<# 
+using(var conn = new SqlConnection(connectionString))
+using(var cmd = new SqlCommand(sqlString, conn))
+{
+  conn.Open();
+  
+  var contactTypes = cmd.ExecuteReader();
+  int x=0;
+  while( contactTypes.Read() )
+  { 
+  x++;
+  #>
+    <#= ValidIdentifier( contactTypes[0].ToString() ) #> = <#=x#>,
+  <#}
+  
+  conn.Close();
+}
+#>
+  }
+}
+<#+
+  public string ValidIdentifier(string input)
+  {
+    return  Regex.Replace(input, @"[^a-zA-Z0-9]", String.Empty );
+  }
+#>
